@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/notejam1/notejamspring', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/notejam1/notejamspring']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['app', 'deploy', 'app.yaml', '--version=1.0', '--image-url=gcr.io/notejam1/notejamspring', '-q' ]
+timeout: 6000s
