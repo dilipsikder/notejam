@@ -18,9 +18,9 @@ The full stack is:
 
 The application is maintained by `@malkusch <https://github.com/malkusch>`_.
 
-============================
+==========================
 Installation and launching
-============================
+==========================
 
 -----
 Clone
