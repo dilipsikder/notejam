@@ -5,4 +5,4 @@ steps:
   args: ['push', 'gcr.io/notejam1/notejamspring']
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy', 'app.yaml', '-q' ]
-timeout: 6000s
+timeout: 36000s
